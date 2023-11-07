@@ -30,7 +30,7 @@ model Job {
   note    String    @default("")
   startAt DateTime
   doneAt  DateTime?
-  status  JobStatus
+  status  JobStatus @default(PENDING)
   userId  Int?
   User    User?     @relation(fields: [userId], references: [id])
   deleted Boolean   @default(false)
