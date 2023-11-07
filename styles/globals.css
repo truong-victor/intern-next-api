@@ -1,0 +1,416 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  overflow: hidden;
+}
+.product-description > * {
+  width: 100%;
+  padding-top: 0.4rem;
+}
+.product-description > * > img {
+  max-width: 60%;
+}
+/* carousel */
+.carouselImage {
+  width: 100%;
+}
+
+/* theme-light */
+.lightTheme {
+  background: #fff;
+  color: #000;
+}
+.lightSection {
+  background: #55e6ff;
+  color: #000;
+}
+.lightBg {
+  background: #f0f0f0;
+}
+
+/* theme-dark */
+.darkTheme {
+  background: #171d36;
+  color: #fff;
+}
+.darkSection {
+  background: #293462;
+  color: #fff;
+}
+.darkBg {
+  background: #121212;
+}
+
+/* text-xem-them */
+.seeMore {
+  color: #000;
+  cursor: pointer;
+  text-align: center;
+  padding: 4px;
+  margin: 1rem 0;
+}
+.darkTheme .seeMore:hover {
+  color: #1677ff;
+}
+.lightTheme .seeMore:hover {
+  color: #1677ff;
+}
+.darkTheme .seeMore {
+  color: #fff;
+}
+.lightTheme .seeMore {
+  color: #000;
+}
+
+/* text-chu-de */
+.titleSection {
+  width: 100%;
+  border-left: 2px solid #ab3232;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 2rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.darkTheme .titleSection {
+  color: #fff;
+}
+.lightTheme .titleSection {
+  color: #000;
+}
+
+/* mạng xã hội*/
+.facebook {
+  color: #1677ff;
+  margin: 0.6rem;
+}
+.facebook:hover .faceicon {
+  color: #0256cd;
+}
+.facebook:hover {
+  color: #0256cd;
+  text-shadow: 1px 1px 1px #5ca0ff;
+}
+.faceicon {
+  color: #1677ff;
+}
+.youtube {
+  color: red;
+  margin: 0.6rem;
+}
+.youtube:hover {
+  color: rgb(177, 0, 0);
+  text-shadow: 1px 1px 1px red;
+}
+.youtube:hover .yticon {
+  color: rgb(177, 0, 0);
+}
+.yticon {
+  color: red;
+}
+
+/* menutop */
+.highlightText {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.highlightText:hover {
+  color: #fff !important;
+}
+.highlightText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.highlightText:hover::after {
+  transform: scaleX(1);
+}
+
+/* menu-side */
+.menuItem:hover {
+  color: #1677ff;
+}
+.ant-menu-submenu-title:hover {
+  color: #1677ff !important;
+}
+
+/* effect-card */
+.hoverEffect {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hoverEffect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* card */
+.imgCard {
+  height: 160px;
+}
+.cardTitle {
+  font-weight: 500;
+  padding: 0.2rem;
+  height: 2.6rem;
+  line-height: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.cardDescription {
+  padding: 0.2rem;
+  height: 1.4rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* aboutmina */
+.darkTheme .aboutmina {
+  color: #fff;
+}
+.lightTheme .aboutmina {
+  color: #000;
+}
+.darkTheme .studentsaid {
+  color: #000;
+}
+.lightTheme .studentsaid {
+  color: #000;
+}
+
+/* name-ava-components/menu/user|admin menu */
+.hovername {
+  line-height: 2.3rem;
+  cursor: pointer;
+  color: #fff;
+}
+.hovername:hover {
+  color: #5ca0ff;
+}
+
+/* chinh theme */
+.darkTheme .textTheme {
+  color: #000;
+  /* color: #fff; */
+}
+.lightTheme .textTheme {
+  color: #000;
+}
+
+/* hộp ở lớp học - thông tin lớp */
+.roundedBox {
+  border-radius: 0.5rem;
+  background: transparent;
+  padding: 0.5rem;
+}
+.boxclass {
+  border: 1px solid #d9d9d9;
+}
+
+/* map-footer */
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100%;
+  width: 100%;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+.branchFooter {
+  cursor: pointer;
+}
+.branchFooter:hover {
+  color: #1677ff;
+}
+
+.textBox {
+  background: #ece1e1;
+  padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #000000d0;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-align: start;
+  width: 100%;
+}
+.cardBox {
+  cursor: pointer;
+}
+.richTextBox p img {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.boxShadow {
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.deepBoxShadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media (max-width: 576px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* input number */
+.number-input input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttonAddCart {
+  border-radius: 0.5rem;
+  height: 60px;
+  padding: 0 10px;
+  font-size: 20px;
+  color: red;
+  background-color: #fff;
+  border: 1px solid red;
+  transition: all 0.3s;
+  cursor: pointer
+}
+.buttonAddCart:hover {
+  transform: translateY(-2px);
+  color: #1677ff;
+  border-color: #1677ff;
+}
+.buttonBuy {
+  height: 60px;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+}
+.buttonBuy:hover {
+  background-color: #1677ff;
+  border-color: #1677ff;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: left;
+  }
+  
+  100% {
+    background-position: right;
+  }
+}
+.logoText {
+  background-image: linear-gradient(to right, #07ba99, #84a0fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+   animation: gradient-animation 1s linear infinite;
+}
+.messenger-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+ 
+  color: white;
+  cursor: pointer;
+  animation: messenger-bounce 1s infinite;
+}
+
+.messenger-icon:hover {
+  animation: none;
+}
+
+@keyframes messenger-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.imageCard {
+  height: 240px;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.imgSlide{
+  position: relative;
+  height:   600px;
+}
+.cartImage {
+  height: 86px;
+}
+@media only screen and (max-width: 575px){
+body {
+      overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-right: 0; /* loại bỏ khoảng trống bên phải */
+    box-sizing: border-box; /* tính cả padding và border vào kích thước của phần tử */
+  }
+  
+  /* Ẩn thanh cuộn trên thiết bị di động của trình duyệt Safari */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+.imageCard {
+  height: 160px;
+}
+.imgSlide{
+  height:   360px;
+}
+.cartImage {
+  height: 66px;
+}
+.logoText {
+  font-size: 1.3rem;
+}
+}
+@media only screen and (max-width: 1280px){
+
+.imageCard {
+  height: 220px;
+}
+.imgSlide{
+  height:   440px;
+}
+
+}
+
