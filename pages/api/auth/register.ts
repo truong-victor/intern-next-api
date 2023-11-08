@@ -53,7 +53,7 @@ export default async function handler(
     });
   }
 
-  const { name, email, password } = req.body as any;
+  const { name, email, password } = JSON.parse(req.body) as any;
 
   const findExisted = await prisma.user.findFirst({
     where: {

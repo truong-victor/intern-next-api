@@ -56,7 +56,7 @@ export default async function handler(
     });
   }
 
-  const { email, password } = req.body as PayloadProps;
+  const { email, password } = JSON.parse(req.body) as PayloadProps;
   try {
     const user = await prisma.user.findUnique({
       where: {
