@@ -18,6 +18,9 @@ import { prisma } from "@/services/prisma";
  *                 email:
  *                   type: string
  *                   example: "truongpham2412.nd@gmail.com"
+ *                 name:
+ *                   type: string
+ *                   example: "Pham van Truong"
  *                 password:
  *                   type: string
  *                   example: "123"
